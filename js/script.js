@@ -59,7 +59,7 @@ submit.addEventListener("click", function () {
 
     document.getElementById("stampa-prezzo").innerHTML = prezzo_calcolato;
 
-    if (nome == "" & km == "") {
+    if (nome == "" || km == "") {
         alert("devi inserire prima i campi");
 
         document.getElementById("stampa-nome").innerHTML = "###### ######";
