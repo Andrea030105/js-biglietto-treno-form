@@ -11,14 +11,152 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-
+<body class="bg-red">
     <div class="container">
-        <h1 id="prezzo"></h1>
-    </div>
+        <div class="row">
+            <div class="col">
+                <div class="title-container d-flex justify-content-center p-5">
+                    <h1 class="text-uppercase fw-bold text-light">
+                        Calcola il prezzo del tuo biglietto
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="container-fluid bg-light rounded-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="container-form cl-red fs-4 fw-bold">
+                                    <form class="d-flex flex-column align-items-center m-2">
+                                        <label class="m-2">Nome e cognome</label>
+                                        <input type="text" class="rounded border-danger" id="nome">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="container-form cl-red fs-4 fw-bold">
+                                    <form class="d-flex flex-column align-items-center m-2">
+                                        <label class="m-2">Km da percorrere</label>
+                                        <input type="text" class="rounded border-danger" id="km">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="container-form cl-red fs-4 fw-bold">
+                                    <div class="d-flex align-items-center flex-column m-2">
+                                        <label class="m-2">Fascia d'et&agrave;</label>
+                                        <select id="eta" class="form-select border-danger rounded">
+                                            <option value="1">Minorenne</option>
+                                            <option value="2">18-65</option>
+                                            <option value="3">Over 65</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="container-button text-center m-4">
+                                    <button id="submit"
+                                        class="rounded border-success text-success bg-transparent py-1 px-4">Submit</button>
+                                    <button id="reset"
+                                        class="rounded border-danger bg-transparent py-1 px-4 cl-red">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title-container d-flex justify-content-center p-5">
+                        <h1 class="text-uppercase fw-bold text-light">
+                            Il tuo biglietto
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container-fluid bg-light rounded-5 p-4">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="text-uppercase fw-bold">
+                                        dettaglio passeggero
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="container-fluid border-gray">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="container bg-gray h-100">
+                                                    <h3 class="text-uppercase fw-bold">
+                                                        nome passeggero
+                                                    </h3>
+                                                    <p id="stampa-nome">
+                                                        ###### ######
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="container fs-4">
+                                                    <p class="fw-bold">
+                                                        Offerta
+                                                    </p>
+                                                    <p id="stampa-offerta">
+                                                        ######
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="container fs-4">
+                                                    <p class="fw-bold">
+                                                        Carrozza
+                                                    </p>
+                                                    <p id="stampa-carrozza">
+                                                        ######
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="container fs-4">
+                                                    <p class="fw-bold">
+                                                        Codice CP
+                                                    </p>
+                                                    <p id="stampa-codice">
+                                                        ######
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="container fs-4">
+                                                    <p class="fw-bold">
+                                                        Costo biglietto
+                                                    </p>
+                                                    <p id="stampa-prezzo">
+                                                        ######
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- js -->
-    <script type="text/javascript" src="./js/script.js"></script>
+            <!-- js -->
+            <script type="text/javascript" src="./js/script.js"></script>
+
 </body>
 
 </html>

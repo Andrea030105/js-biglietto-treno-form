@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.bg-red {
+    background-color: #c11150;
+}
+
+.bg-gray {
+    background-color: #808080;
+}
+
+.cl-red {
+    color: #c11150;
+}
+
+#reset:hover {
+    background-color: #c11150 !important;
+    color: #fff;
+}
+
+#submit:hover {
+    background-color: #008857 !important;
+    color: #fff !important;
+}
+
+.border-gray {
+    border-top: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    padding: 0;
+}
