@@ -1,4 +1,3 @@
-const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
 
 reset.addEventListener("click", function () {
@@ -19,32 +18,35 @@ reset.addEventListener("click", function () {
 
 })
 
+const submit = document.getElementById("submit");
+
 submit.addEventListener("click", function () {
     let nome = document.getElementById("nome").value;
     let km = document.getElementById("km").value;
     let eta = document.getElementById("eta").value;
     let prezzo_calcolato
     let offerta
+    let prezzo
 
     console.log(nome, km, eta);
 
     if (eta == 1) {
 
-        let prezzo = (0.21 * km * 0.8).toFixed(2);
+        prezzo = (0.21 * km * 0.8).toFixed(2);
         prezzo_calcolato = prezzo
         offerta = "20%"
         console.log("sei minorenne, 20% di sconto " + prezzo);
 
     } else if (eta == 3) {
 
-        let prezzo = (0.21 * km * 0.6).toFixed(2);
+        prezzo = (0.21 * km * 0.6).toFixed(2);
         prezzo_calcolato = prezzo
         offerta = "40%"
         console.log("sei over 65, 40% di sconto " + prezzo);
 
     } else {
 
-        let prezzo = (0.21 * km).toFixed(2);
+        prezzo = (0.21 * km).toFixed(2);
         prezzo_calcolato = prezzo
         console.log("prezzo pieno " + prezzo);
 
